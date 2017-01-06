@@ -1,3 +1,4 @@
+HSH Build - Built upon the below WorkFlow & Tech
 # ZURB Template
 
 [![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
@@ -54,6 +55,7 @@ Then open the folder in your command line, and install the needed dependencies:
 cd projectname
 npm install
 bower install
+bower install foundation-icon-fonts
 ```
 
 Finally, run `npm start` to run Gulp. Your finished site will be created in a folder called `dist`, viewable at this URL:
