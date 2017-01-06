@@ -6,14 +6,48 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Home Sweet Home | Ireland</title>
+    <link rel="canonical" href="http://www.homesweethome.irish/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Homelesness, Ireland, home sweet home" >
+    <meta name="description" content="A campaign to end homelessness in Ireland once and for all.">
+
+    <!--FACEBOOK-->
+    <meta property="og:title" content="End Homelessness Now" >
+    <meta property="og:site_name" content="Home Sweet Home | Ireland">
+    <meta property="og:url" content="http://www.homesweethome.irish/" >
+    <meta property="og:description" content="A campaign to end homelessness in Ireland once and for all.
+" >
+    <meta property="og:image" content="http://www.homesweethome.irish/assets/img/hshlogofacebook.png" >
+    <meta property="fb:app_id" content="1524225797594594" >
+    <meta property="og:type" content="website" >
+    <meta property="og:locale" content="en-ie" >
+    <!--TWITTER-->
+    <meta property="twitter:card" content="summary" >
+    <meta property="twitter:title" content="#EndHomelessnessNow" >
+    <meta property="twitter:description" content="A campaign to end homelessness in Ireland once and for all.
+" >
+    <meta property="twitter:creator" content="@hshireland" >
+    <meta property="twitter:url" content="http://www.homesweethome.irish/" >
+    <meta property="twitter:image" content="http://www.homesweethome.irish/assets/img/hshlogotwitter.png" >
+    <meta property="twitter:image:alt" content="home sweet home ireland, a logo illustrating a house." >
+    <link href="assets/img/hsh_1.ico" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
   <body>
-
-    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+  <div class="wrapper">
+    
+    {{> nav}}
+    {{> simple-header}}
     {{> body}}
-
+    {{> footer}}
+    
+    
+    <div id="fb-root"></div>
+    </div>
     <script src="{{root}}assets/js/app.js"></script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script async src="//funds.gofundme.com/js/5.0/media-widget.js"></script>
+    <script async src="//www.youtube.com/player_api"></script>
   </body>
 </html>

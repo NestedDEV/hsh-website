@@ -1,0 +1,16 @@
+/**MENU FOUC**/
+
+/** Avoid FOUC in the appearance of menus needing javascript before DOM load**/
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}

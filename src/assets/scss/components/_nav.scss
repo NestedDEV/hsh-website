@@ -1,0 +1,12 @@
+.top-bar {
+	max-width: rem-calc(1200);
+	margin: 0 auto;
+}
+
+.menu li a {
+	color: $white;
+	&:hover {
+		color: $warning-color;
+	}
+}
+

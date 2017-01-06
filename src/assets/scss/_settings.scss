@@ -49,26 +49,29 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #2199e8,
-  secondary: #777,
+  primary: rgb(70, 193, 244),
+  secondary: rgb(239, 81, 65),
   success: #3adb76,
-  warning: #ffae00,
+  warning: rgb(247, 201, 33),
   alert: #ec5840,
 );
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
+$buttons:#262627;
+$brown: #A37D83;
+$platinum: #E8E9EB;
+$light-gray: #cacaca;
+$medium-gray: #939FAF;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
-$body-background: $white;
+$black: #000000;
+$white: rgb(243, 240, 240);
+$body-background: $platinum;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Helvetica', sansserif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: 2px;
 $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
@@ -102,7 +105,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family: 'Roboto Slab', serif;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -116,11 +119,11 @@ $header-sizes: (
     'h6': 16,
   ),
   medium: (
-    'h1': 48,
-    'h2': 40,
-    'h3': 31,
-    'h4': 25,
-    'h5': 20,
+    'h1': 45,
+    'h2': 37,
+    'h3': 28,
+    'h4': 22,
+    'h5': 17,
     'h6': 16,
   ),
 );
@@ -144,7 +147,7 @@ $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
-$hr-border: 1px solid $medium-gray;
+$hr-border: 1px solid $secondary-color;
 $hr-margin: rem-calc(20) auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
@@ -193,14 +196,14 @@ $input-error-font-weight: $global-weight-bold;
 // 7. Accordion
 // ------------
 
-$accordion-background: $white;
+$accordion-background: darken($primary-color, 5);
 $accordion-plusminus: true;
 $accordion-item-color: foreground($accordion-background, $primary-color);
-$accordion-item-background-hover: $light-gray;
+$accordion-item-background-hover: $warning-color;
 $accordion-item-padding: 1.25rem 1rem;
 $accordion-content-background: $white;
 $accordion-content-border: 1px solid $light-gray;
-$accordion-content-color: foreground($accordion-background, $primary-color);
+$accordion-content-color: $black;
 $accordion-content-padding: 1rem;
 
 // 8. Accordion Menu
@@ -274,10 +277,10 @@ $callout-link-tint: 30%;
 // ----------------
 
 $closebutton-position: right top;
-$closebutton-offset-horizontal: 1rem;
-$closebutton-offset-vertical: 0.5rem;
+$closebutton-offset-horizontal: 0.3rem;
+$closebutton-offset-vertical: 0rem;
 $closebutton-size: 2em;
-$closebutton-lineheight: 1;
+$closebutton-lineheight: 0.7;
 $closebutton-color: $dark-gray;
 $closebutton-color-hover: $black;
 
@@ -409,15 +412,15 @@ $maincontent-shadow: 0 0 10px rgba($black, 0.5);
 // 25. Orbit
 // ---------
 
-$orbit-bullet-background: $medium-gray;
-$orbit-bullet-background-active: $dark-gray;
+$orbit-bullet-background: $dark-gray;
+$orbit-bullet-background-active: $primary-color;
 $orbit-bullet-diameter: 1.2rem;
-$orbit-bullet-margin: 0.1rem;
+$orbit-bullet-margin: 0.2rem;
 $orbit-bullet-margin-top: 0.8rem;
 $orbit-bullet-margin-bottom: 0.8rem;
 $orbit-caption-background: rgba($black, 0.5);
 $orbit-caption-padding: 1rem;
-$orbit-control-background-hover: rgba($black, 0.5);
+$orbit-control-background-hover: rgba($primary-color, 0.5);
 $orbit-control-padding: 1rem;
 $orbit-control-zindex: 10;
 
@@ -538,8 +541,8 @@ $titlebar-background: $black;
 $titlebar-color: $white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
-$titlebar-icon-color: $white;
-$titlebar-icon-color-hover: $medium-gray;
+$titlebar-icon-color: $warning-color;
+$titlebar-icon-color-hover: darken($white, 10);
 $titlebar-icon-spacing: 0.25rem;
 
 // 35. Tooltip
@@ -559,8 +562,8 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
-$topbar-submenu-background: $topbar-background;
+$topbar-background: $black;
+$topbar-submenu-background: $platinum;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;

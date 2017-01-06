@@ -1,0 +1,27 @@
+footer {
+	& .thumbnail {
+		background-color: $white;
+		
+	}
+	& .menu-copy {
+		background-color: $black;
+		color: $white;
+		& .menu li a {
+			&:hover {
+				color: $warning-color;
+			}
+		}
+		& .menu-text {
+			font-weight: normal;
+		}
+	}
+}
+
+
+footer .callout {
+	margin: 0 auto;
+	border:none;
+	&.secondary{
+	background-color: lighten($warning-color, 0);
+}
+}

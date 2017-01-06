@@ -1,0 +1,22 @@
+#orbit-bg.row {
+	background-color: $white;
+	padding: 0;
+
+}
+.orbit-container {
+	
+}
+.orbit-slide {
+  padding: 0;
+  color: $black;
+  
+}
+
+.orbit-previous, .orbit-next {
+	color: $platinum;
+}
+
+.orbit-slide.is-active {
+	padding:0;
+	
+}

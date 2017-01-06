@@ -1,0 +1,47 @@
+.video-section {
+	background-color: $white;
+	border-radius: $global-radius;
+	padding-bottom: rem-calc(20);
+	h3 {
+		padding-top: rem-calc(20);
+		padding-left: rem-calc(20);
+	}
+}
+
+.thumbnail.video-1{
+	width: rem-calc(306);
+	height: rem-calc(221);
+	background: url('../img/video-1.png') no-repeat center center ;
+}
+.thumbnail.video-2{
+	width:rem-calc(306);
+	height:rem-calc(221);
+	background: url('../img/video-2.png') no-repeat center center ;
+}
+.thumbnail.video-3 {
+	width:rem-calc(306);
+	height:rem-calc(221);
+	background: url('../img/video-3.png') no-repeat center center ;
+}
+
+
+i.fi-play {
+	color:$white;
+	font-size: rem-calc(100);
+	&:hover {
+		color: $warning-color;
+	}
+	&.play-1, &.play-2, &.play-3{
+		position:relative;
+		top: calc(50% - 50px); /* 50% - 3/4 of icon height */
+		cursor: pointer;
+	}
+}
+@include breakpoint(small only) {
+	.reveal  {
+		width: 100%;
+		height: 60%;
+		height: 60vh;
+		min-height: 20vh;
+	}
+}

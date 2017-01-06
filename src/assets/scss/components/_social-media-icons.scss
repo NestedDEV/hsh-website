@@ -1,0 +1,19 @@
+a i[class^="fi-"] {
+	padding: rem-calc(5);
+	font-size: rem-calc(52);
+	color:$primary-color;
+		&:hover {
+		color: darken($primary-color, 10);
+	}
+}
+
+.twitter-timeline {
+	margin-top: 20px !important;
+	.timeline-widget {
+	background-color: $primary-color;
+}
+}
+
+.powered {
+	font-size: 12px;
+}

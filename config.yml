@@ -27,6 +27,8 @@ PATHS:
   sass:
     - "bower_components/foundation-sites/scss"
     - "bower_components/motion-ui/src"
+     # includes foundation icons
+    - "bower_components/foundation-icon-fonts"
   # Paths to JavaScript libraries, which are compined into one file
   javascript:
     # Libraries requried by Foundation
